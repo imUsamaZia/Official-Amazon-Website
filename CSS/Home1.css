@@ -1,0 +1,2399 @@
+:root {
+    --header-background-color: #634C9F;
+    --top-header-text-color: #FFFFFF;
+    --middle-header-text-color: #6B7280;
+    --bottom-header-text-color: #030712;
+    --background-color: #FFFFFF;
+    --medium-font-weight: 500;
+    --reguler-font-weight: 400;
+    --semibold-font-weight: 600;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    margin: 0;
+    padding: 0;
+
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* gap: 5rem; */
+}
+
+
+/* Main */
+/* Hero-section */
+.hero-section {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--background-color);
+}
+
+.Categories-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--bottom-header-text-color);
+}
+
+.main-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    gap: 0px;
+    margin-top: -25px;
+}
+
+.carousel-control-prev,
+.carousel-control-next{
+z-index: auto;
+}
+
+.main-image-part {
+    background-image: url('/Image/home1.png');
+    background-size: cover;
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+    /* width: 100%;
+    height: 100%; */
+    margin-top: 8px;
+    /* width: 1349px; */
+    height: 700px;
+    width: 98.7vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-part-content {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 12px;
+    height: 82%;
+    padding: 0 6rem;
+    max-width: 1350px;
+}
+
+.Weekend-Discount-btn {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #166534;
+    background: linear-gradient(to right, #d5c9c9, #EEEEEC);
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    width: 123px;
+    height: 28px;
+}
+
+.main-part-heading {
+    font-size: 4.2rem;
+    font-weight: 700;
+    color: #39245F;
+    margin: 0;
+    width: 50%;
+}
+
+.main-part-text {
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: var(--bottom-header-text-color);
+    margin: 0;
+}
+
+.main-quantity-part {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    margin-top: 2rem;
+}
+
+.shop-now-btn {
+    width: 134px;
+    height: 42px;
+    font-size: 1.4rem;
+    background-color: rgb(99, 76, 159);
+    color: var(--top-header-text-color);
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 14px;
+}
+
+.main-part-number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.main__numbers {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 4px;
+}
+
+.active-number {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #DC2626;
+}
+
+.del-number {
+    font-size: 2rem;
+    font-weight: 500;
+    color: #111827;
+}
+
+.main-part__text {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: var(--bottom-header-text-color);
+    margin: 0;
+}
+
+.main-home-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 12px;
+    position: relative;
+}
+.main-home-dropdown {
+    height: 194px;
+    background-color: var(--middle-header-text-color);
+    width: 105px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    z-index: 1;
+    top: 29px;
+    right: -46px;
+    padding: 5px 0 0 5px;
+
+}
+
+
+.main__home__dropdown {
+    padding-left: 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.dropdown-links {
+    color: var(--background-color);
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0;
+}
+.main-home-page-sale {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 12px;
+    position: relative;
+}
+.main-home-dropdown-sale {
+    height: 194px;
+    background-color: var(--middle-header-text-color);
+    width: 105px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    z-index: 1;
+    top: 29px;
+    right: 0px;
+    padding: 5px 0 0 5px;
+
+}
+.dropdown-content-sale {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 6px;
+    cursor: pointer;
+}
+/* payment-section */
+
+
+
+/* footer-section */
+.footer-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F3F4F6;
+    width: 100%;
+}
+
+.footer__section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 4rem 4rem;
+    gap: 6rem;
+}
+
+.footer-top-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+
+}
+
+.footer-top-left {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.newsletter {
+    color: #111827;
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.Register-now {
+    color: var(--middle-header-text-color);
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin: 0;
+    width: 58%;
+}
+
+.footer-top-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: -3rem;
+}
+
+.footer-top-search-menu input[type="text"] {
+    flex-grow: 1;
+    padding: 0px 4px;
+    border: none;
+    outline: 0;
+    font-size: 1.6rem;
+    background: transparent;
+    height: 15px;
+    width: 101px;
+    background-color: #F3F4F6;
+    border: none;
+    outline: none;
+    background-color: var(--background-color);
+
+}
+
+.footer-top-search-menu::placeholder {
+    font-size: 1.4rem;
+    font-weight: var(--reguler-font-weight);
+    color: #9CA3AF;
+}
+
+.footer-top-search-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 8px;
+    width: 100%;
+    border-radius: 10px;
+    background-color: var(--background-color);
+
+}
+
+.footer-top-msg {
+    height: 20px;
+    width: 20px;
+}
+
+.send-message-btn {
+    width: 73px;
+    height: 50px;
+    background-color: #634C9F;
+    border: none;
+    outline: none;
+    border-radius: 0px 8px 8px 0px;
+    font-size: 1.4rem;
+    font-weight: 700;
+    font-weight: var(--reguler-font-weight);
+    color: var(--background-color);
+}
+
+.subscribing-you {
+    color: var(--middle-header-text-color);
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin: 0;
+}
+
+.footer-bottom-section {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.footer__bottom__section1 {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.Need-Help {
+    color: #111827;
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.Autoseligen {
+    color: var(--middle-header-text-color);
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin: 0;
+}
+
+.footer-contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.footer-contact-img {
+    height: 25px;
+    width: 25px;
+}
+
+.Need-help-with {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.Need__help__with {
+    color: #111827;
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin: 0;
+}
+
+.footer-contact-nmbr {
+    color: #111827;
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.footer-contact-mail {
+    color: #111827;
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.footer__bottom__section2 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.footer__bottom__section5 {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.all-footer-links {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 8px;
+    padding-left: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+.google-play-img {
+    width: 120px;
+    height: 39px;
+}
+
+.Download__App__Get {
+    color: var(--middle-header-text-color);
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 0;
+}
+
+.socials-app {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0px;
+}
+
+.social__apps {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 8px;
+}
+
+.fb {
+    height: 36px;
+    width: 36px;
+}
+
+.footer-line {
+    width: 100%;
+    margin: 0;
+    border: 0.1px solid #D1D5DB;
+}
+
+.footer-middle-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.footer-middle-left {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.copyright {
+    color: var(--middle-header-text-color);
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.KLBTheme {
+    color: rgb(68 23 187)
+}
+
+.footer-company-logo {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 8px;
+}
+
+.visa {
+    width: 36px;
+    height: 13px;
+}
+
+.footer-ball {
+    width: 24px;
+    height: 15px;
+}
+
+.paypal {
+    height: 15px;
+    width: 53px;
+}
+
+.skrill {
+    height: 15px;
+    width: 41px;
+}
+
+.klarna {
+    height: 15px;
+    width: 64px;
+}
+
+.footer-middle-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 10px;
+    /* max-width: 1350px; */
+
+}
+
+.Terms-and-Conditions {
+    color: #111827;
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin: 0;
+    border-bottom: 1px solid #111827;
+}
+
+/* Fruits-Vegetables-section" */
+.Fruits-Vegetables-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: var(--background-color);
+}
+
+.Fruits__Vegetables__section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 4rem 4rem;
+    max-width: 1350px;
+
+}
+
+.home-food-items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 11px;
+
+}
+
+
+.home-food-items-img {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 138px;
+    width: 138px;
+    border-radius: 50%;
+
+    background-color: rgb(243, 244, 246);
+}
+
+.home__food__items__img {
+    height: 122px;
+    width: 122px;
+}
+
+.home-food-items-text {
+    color: #030712;
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+/* home-section-one */
+
+
+.home-section-one {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: #E5E7EB;
+
+}
+
+.home__section__one {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding: 0 4rem;
+    margin-top: 30px;
+    max-width: 1350px;
+
+}
+
+.vagetable__section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    max-width: 1350px;
+    width: 100%;
+}
+
+.Quality-eggs {
+    background-image: url(/Image/mano-Make\ your\ grocery.png);
+    background-size: cover;
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 12px;
+    width: 650px;
+    height: 240px;
+    padding: 0 23px;
+}
+
+.Only-This-Week {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #EA580C;
+    margin: 0;
+}
+
+.affordable-price {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #111827;
+    margin: 0;
+    width: 60%;
+}
+
+.every-day {
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: var(--middle-header-text-color);
+    margin: 0;
+}
+
+.vagetable-btn {
+    height: 34px;
+    width: 109px;
+    border-radius: 999px;
+    background-color: var(--background-color);
+    color: #212529;
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.Snacks-nourishes {
+    background-image: url(/Image/Get\ your\ everyday-facwash.png);
+    background-size: cover;
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 12px;
+    width: 650px;
+    height: 240px;
+    padding: 0 23px;
+}
+
+.home1-Popular-Companies-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 17px 0;
+    max-width: 1350px;
+
+}
+
+.Popular-Companies-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    /* width: 100%; */
+}
+
+.Popular-Companies-heading {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #030712;
+    margin: 0;
+}
+
+.Popular-Companies-text {
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: var(--middle-header-text-color);
+    margin: 0;
+}
+
+.Popular-Companies-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* width: 100%; */
+}
+
+.Popular-Companies-btn {
+    width: 97px;
+    height: 34px;
+    background-color: var(--background-color);
+    border: 1px solid #E5E7EB;
+    border-radius: 999px;
+    outline: none;
+    color: #212529;
+    font-size: 1.2rem;
+    font-weight: 700;
+
+}
+
+
+
+.sub__home__section__one {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    max-width: 1350px;
+}
+
+.dry-fruit-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* width: 100%; */
+    width: 254.3px;
+    height: 376px;
+    margin: 0 auto;
+    border: 0.2px solid #d8e2f5;
+    gap: 2rem;
+    position: relative;
+    background-color: var(--background-color);
+}
+
+
+.dry-fruit-quality-products {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #111827;
+    margin: 0;
+    width: 100%;
+}
+
+.juice-label-price {
+    display: block;
+    width: 38px;
+    height: 24px;
+    background-color: #DC2626;
+    font-size: 10px;
+    font-weight: 800;
+    color: #FEF2F2;
+    border-radius: 14px 40px 40px 14px;
+    padding: 7px;
+    position: absolute;
+    top: 16px;
+    left: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.applice-juice-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* width: 100%; */
+    width: 225px;
+    height: 380px;
+    margin: 0 auto;
+    border: 0.2px solid #d8e2f5;
+    gap: 2rem;
+    position: relative;
+}
+
+.apple-juice-content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 10px;
+    gap: 10px;
+}
+
+.apple-juice-content-two {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 10px;
+    gap: 10px;
+}
+
+.applice-juice {
+    width: 177px;
+    height: 177px;
+    /* border: 1px solid; */
+}
+
+.applice-juice-four {
+    width: 177px;
+    height: 177px;
+    /* border: 1px solid; */
+}
+
+.banana__lays__star {
+    display: block;
+    position: absolute;
+    top: 11px;
+    left: 174px;
+}
+
+.Percent-Apple {
+    font-size: 14px;
+    margin: 0;
+    font-weight: 500;
+    color: var(--bottom-header-text-color);
+    padding-right: 2px;
+}
+
+.home-one-yellow-img {
+    width: 68px;
+    height: 11px;
+}
+
+.main__numbers {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 6px;
+}
+
+.juice-card-number {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #DC2626;
+}
+
+.juice-del-number {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #111827;
+}
+
+.home-one-red-cart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.home__one__red__cart {
+    height: 34px;
+    width: 36px;
+    border-radius: 10px;
+    background-color: #16A34A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-one-red-cart-img {
+    width: 18px;
+    height: 15px;
+}
+
+.home__one__red__cart-nmbr {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #16A34A;
+}
+
+.Cold-Sale-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    border: none;
+    outline: none;
+    background: linear-gradient(to right, #A5EFFF, #E7F8FD);
+    width: 88px;
+    height: 24px;
+    border-radius: 40px;
+    position: absolute;
+    left: 13px;
+    gap: 4px;
+}
+.frozon-icon-btn {
+    width: 11px;
+    height: 13px;
+}
+
+.frozon-icon-text {
+    font-size: 1rem;
+    font-weight: 800;
+    color: #0891B2;
+    margin: 0;
+}
+
+.Simple-Kitchen-FD {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    flex-direction: row;
+    width: 32px;
+    height: 14px;
+    background-color: #E5E7EB;
+    border-radius: 35px;
+    position: absolute;
+    right: 27px;
+}
+
+.Simple__Ki__tchen__FD__red {
+    background-color: #FACC15;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+}
+
+.Simple__Ki__tchen__FD__white {
+    background-color: var(--background-color);
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+}
+
+/* home-section-two */
+.home-section-two {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    background-color: #E5E7EB;
+    padding-top: 4rem;
+
+}
+
+.home__section__two {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    width: 100%;
+    padding: 0 4rem;
+    margin-top: 13px;
+    flex-direction: row;
+    max-width: 1350px;
+}
+
+.home1-Popular-Companies-content-two {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0px 4rem;
+    max-width: 1350px;
+
+
+}
+
+.Percent__Apple__Juice {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* width: 100%; */
+    width: 247px;
+    height: 518px;
+    margin: 0 auto;
+    border: 0.2px solid #d8e2f5;
+    gap: 2rem;
+    position: relative;
+    background-color: var(--background-color);
+}
+
+.This-product-is {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #9CA3AF;
+}
+
+.product-is-line {
+    background: linear-gradient(to right, #FFD200, #DC2626);
+    width: 197px;
+    height: 6px;
+}
+
+.available__only {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #030712;
+}
+
+.side-panel-line-two {
+    width: 197px;
+    /* height: 6px; */
+    margin: 0;
+    /* border: 0.3px solid #E5E7EB; */
+}
+
+.Organic-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    border: none;
+    outline: none;
+    background: linear-gradient(to right, #D4FC79, #96E6A1);
+    width: 70px;
+    height: 24px;
+    border-radius: 40px;
+    position: absolute;
+    left: 13px;
+    top: 37%;
+    gap: 4px;
+}
+.Organic-text {
+    font-size: 1rem;
+    font-weight: 800;
+    color: #166534;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+.banana-lays-cart {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    /* width: 100%; */
+    width: 415px;
+    height: 258px;
+    margin: 0 auto;
+    /* border: 0.2px solid #d8e2f5; */
+    border-left: 0.2px solid #d8e2f5;
+    border-right: 0.2px solid #d8e2f5;
+    border-top: 0.2px solid #d8e2f5;
+    gap: 2rem;
+    position: relative;
+    background-color: var(--background-color);
+    /* margin-top: 26px; */
+}
+
+.banana__lays__cart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 9px;
+    margin-top: 26px;
+
+}
+
+.banana__lays__tags {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 7px;
+    padding-left: 12px;
+}
+
+.banana-lays-content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 10px;
+    gap: 17px;
+}
+
+.banana__lays__card-comos {
+    width: 5px;
+    height: 26px;
+    font-size: 1.6rem;
+    color: #030712;
+    font-weight: 500;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding-top: 0px;
+}
+
+.banana__lays__card-tags {
+    width: 26px;
+    height: 26px;
+    background-color: #E5E7EB;
+    /* display: block; */
+    font-size: 1.2rem;
+    color: #4B5563;
+    font-weight: 700;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding-top: 6px;
+    border-radius: 6px;
+}
+
+.banana__lays__card-text {
+    font-size: 1.1rem;
+    color: #9CA3AF;
+    font-weight: 400;
+    margin: 0;
+}
+
+.banana__lays__btn {
+    background-color: var(--background-color);
+    color: #634C9F;
+    padding: 8px 16px;
+    border: 1px solid #634C9F;
+    border-radius: 14px;
+    cursor: pointer;
+    font-size: 13px;
+    outline: none;
+    width: 197px;
+    height: 34px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.banana__lays__price {
+    display: block;
+    width: 38px;
+    height: 24px;
+    background-color: #DC2626;
+    font-size: 10px;
+    font-weight: 800;
+    color: #FEF2F2;
+    border-radius: 14px 40px 40px 14px;
+    padding: 7px;
+    position: absolute;
+    top: 25px;
+    left: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banana__lays__star {
+    display: block;
+    position: absolute;
+    top: 14px;
+    left: 174px;
+}
+
+.banana-lays-cart-part1 {
+    margin-top: 0;
+}
+
+.Great__Value__Rising__star {
+    display: block;
+    position: absolute;
+    top: 22px;
+    left: 152px;
+}
+
+.Frozen-Pizza-Supreme {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 521px;
+}
+
+.Rising__Crust__Frozen {
+    display: block;
+    position: absolute;
+    top: 24px;
+    left: 169px;
+}
+
+.Nulla__luctus__malesuada {
+    display: block;
+    width: 38px;
+    height: 24px;
+    background-color: #DC2626;
+    font-size: 10px;
+    font-weight: 800;
+    color: #FEF2F2;
+    border-radius: 14px 40px 40px 14px;
+    padding: 7px;
+    position: absolute;
+    top: 27px;
+    left: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* home-section-three */
+.home-section-three {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: #E5E7EB;
+
+}
+
+.home__section__three {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    padding: 0 4rem;
+    max-width: 1350px;
+    /* margin-top: 30px; */
+
+}
+
+.Frozen-Pizza-Supreme-three {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 800px;
+}
+
+.Percent__Apple__Juice__three {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 430px;
+    height: 775px;
+    margin: 0 auto;
+    border: 0.2px solid #d8e2f5;
+    gap: 2rem;
+    position: relative;
+    background-color: rgb(253, 253, 253);
+}
+
+.applice-juice-three {
+    width: 345px;
+    height: 345px;
+}
+
+.banana__lays__btn__three {
+    background-color: #16A34A;
+    color: var(--background-color);
+    padding: 8px 16px;
+    border: none;
+    border-radius: 14px;
+    cursor: pointer;
+    font-size: 14px;
+    outline: none;
+    width: 360px;
+    height: 44px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 6px;
+    margin-left: 2rem;
+}
+
+.banana-lays-cart-three {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    /* width: 100%; */
+    width: 420px;
+    height: 258px;
+    margin: 0 auto;
+    /* border: 0.2px solid #d8e2f5; */
+    border-left: 0.2px solid #d8e2f5;
+    border-right: 0.2px solid #d8e2f5;
+    border-top: 0.2px solid #d8e2f5;
+    gap: 2rem;
+    position: relative;
+    background-color: var(--background-color);
+    /* margin-top: 26px; */
+}
+
+.side-panel-line-three {
+    width: 406px;
+    margin: 0;
+    /* border: 0.3px solid #E5E7EB; */
+}
+
+.product-is-line-three {
+    width: 406px;
+    height: 6px;
+    margin: 0;
+    background: linear-gradient(to right, #FFD200, #DC2626);
+
+}
+
+.Rising__Crust__Frozen__three {
+    display: block;
+    position: absolute;
+    top: 24px;
+    /* left: 250px; */
+    left: 85%;
+}
+
+.Nulla__luctus__malesuada__three {
+    display: block;
+    width: 38px;
+    height: 24px;
+    background-color: #DC2626;
+    font-size: 10px;
+    font-weight: 800;
+    color: #FEF2F2;
+    border-radius: 14px 40px 40px 14px;
+    padding: 7px;
+    position: absolute;
+    top: 30px;
+    left: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* home-section-four */
+.home-section-four {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: #E5E7EB;
+
+}
+
+.home__section__four {
+    display: flex;
+    align-items: flex-end;
+    /* flex-direction: row; */
+    justify-content: center;
+    width: 100%;
+    padding: 0 4rem;
+    margin-top: 30px;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.Quality-eggs-four {
+    background-image: url(/Image/mano-Make\ your\ grocery.png);
+    background-size: cover;
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 12px;
+    width: 409px;
+    height: 240px;
+    padding: 0 23px;
+}
+
+.Snacks-nourishes-four {
+    background-image: url(/Image/mano-Make\ your\ grocery.png);
+
+}
+
+.saves-your-money {
+    background-image: url(/Image/mano-Make\ your\ grocery.png);
+
+}
+
+@media screen and (max-width: 480px) {
+    .Fruits__Vegetables__section {
+
+        justify-content: center;
+
+    }
+
+    .main-image-part {
+        background-position: center;
+        /* width: 100%; */
+        /* height: 100%; */
+        margin-top: 8px;
+        /* width: 373px; */
+        height: 216px;
+        margin: 0 auto;
+    }
+
+    .main-image-part-home-two {
+        background-position: center;
+        /* width: 100%; */
+        /* height: 100%; */
+        margin-top: 8px;
+        width: 373px;
+        height: 216px;
+        margin: 0 auto;
+    }
+
+    .main-image-part-home-one {
+        background-position: center;
+        /* width: 100%; */
+        /* height: 100%; */
+        margin-top: 8px;
+        width: 373px;
+        height: 216px;
+        margin: 0 auto;
+    }
+
+    .main-part-heading {
+        font-size: 1.3rem;
+        font-weight: 500;
+        width: 100%;
+    }
+
+    .Weekend-Discount-btn {
+        font-size: 1rem;
+        font-weight: 400;
+
+        width: 105px;
+        height: 28px;
+    }
+
+    .main-part-content {
+        width: 100%;
+        gap: 11px;
+        height: 95%;
+        padding: 0 4rem;
+    }
+
+    .shop-now-btn {
+        width: 101px;
+        height: 30px;
+        font-size: 1rem;
+    }
+
+    .hidden-products {
+        display: none;
+    }
+
+    .main-part-text {
+        font-size: .8rem;
+        font-weight: 400;
+        color: var(--bottom-header-text-color);
+        margin: 0;
+    }
+
+    .main-part__text {
+        font-size: .6rem;
+        font-weight: 400;
+        color: var(--bottom-header-text-color);
+        margin: 0;
+    }
+
+    .del-number {
+        font-size: 1rem;
+        font-weight: 500;
+        color: #111827;
+    }
+
+    .main-top-content2 {
+        display: none;
+
+    }
+
+    .main-top-content1 {
+        display: none;
+
+    }
+
+    .home1-Popular-Companies-content-two {
+        display: none;
+
+    }
+    .vagetable__section {
+   
+        flex-direction: column;
+ 
+    }
+    
+    .Quality-eggs {
+
+        width: 335px;
+        height: 240px;
+    }
+    .Percent__Apple__Juice {
+        width: 344px;
+        height: 452px;
+    }
+    .Snacks-nourishes {
+        width: 335px;
+        height: 240px;
+    }
+    .Rising__Crust__Frozen {
+        display: none;
+
+    }
+
+    .apple-juice-content {
+        align-items: center;
+        justify-content: center;
+        padding-left: 0;
+
+    }
+    .Cold-Sale-btn {
+        display: none;
+  
+    }
+    .product-is-line-three {
+        width: 339px;
+        height: 6px;
+      
+    }
+    .apple-juice-contenttwo {
+        align-items: center;
+        justify-content: center;
+        padding-left: 0;
+
+    }
+    .Simple-Kitchen-FD {
+        display: none;
+ 
+    }
+    .Percent-Apple {
+
+        text-align: center;
+    }
+
+    .apple-juice-content p {
+        text-align: center;
+
+
+    }
+
+    .product-is-line {
+        background: linear-gradient(to right, #FFD200, #DC2626);
+        width: 100%;
+    }
+
+    .side-panel-line-two {
+
+        width: 100%;
+    }
+
+    .banana-lays-cart {
+
+        width: 346px;
+        height: 258px;
+
+    }
+
+    .applice-juice {
+        width: 150px;
+        height: 150px;
+        /* border: 1px solid; */
+    }
+
+    .applice-juice-four {
+        width: 150px;
+        height: 150px;
+        /* border: 1px solid; */
+    }
+
+    .banana__lays__btn {
+
+        width: 169px;
+        height: 29px;
+
+    }
+
+    .Great__Value__Rising__star {
+        display: none;
+
+    }
+
+    .home1-Popular-Companies-content {
+        display: none;
+
+    }
+
+    .affordable-price {
+
+        width: 100%;
+    }
+
+    .sub__home__section__one {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 2rem;
+    }
+
+    .home__section__one {
+
+        padding: 0 1rem;
+    }
+
+    .dry-fruit-card {
+
+        width: 161.3px;
+        height: 336px;
+    }
+.dry-fruit-card-hidden{
+    display: none;
+}
+    .applice-juice {
+        width: 125px;
+        height: 125px;
+        /* border: 1px solid; */
+    }
+
+    .applice-juice-four {
+        width: 125px;
+        height: 125px;
+        /* border: 1px solid; */
+    }
+
+    .banana__lays__star {
+        display: none;
+
+    }
+
+    .banana-lays-cart-three {
+        width: 341px;
+        height: 258px;
+
+    }
+
+    .Percent__Apple__Juice__three {
+        width: 342px;
+
+    }
+
+    .Quality-eggs-four {
+        width: 337px;
+    }
+
+    .side-panel-line-three {
+
+        display: none;
+    }
+
+    .apple-juice-content-two {
+
+        width: 317px;
+        align-items: center;
+        justify-content: center;
+        padding-left: 0px;
+    }
+
+    .apple-juice-content-two p {
+        text-align: center;
+    }
+
+    .banana__lays__btn__three {
+        width: 316px;
+        height: 39px;
+        margin-left: 0rem;
+    }
+
+    .home__section__four {
+        padding: 0 1rem 2rem 1rem;
+
+    }
+
+    .home__section__three {
+        padding: 0px 1rem;
+        flex-direction: column;
+    }
+
+    .home__section__two {
+        flex-wrap: wrap;
+        padding: 0px 0rem;
+    }
+
+    .main-section {
+
+        gap: 0px;
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+    .bottom-cart {
+        display: none;
+    }
+    .main-image-part {
+        background-position: center;
+        /* width: 100%; */
+        /* height: 100%; */
+        margin-top: 8px;
+        /* width: 519px; */
+        height: 249px;
+        margin: 0 auto;
+    }
+
+    .main-image-part-home-two {
+        background-position: center;
+        /* width: 100%; */
+        /* height: 100%; */
+        margin-top: 8px;
+        width: 519px;
+        height: 249px;
+        margin: 0 auto;
+    }
+    .vagetable__section {
+
+        flex-direction: column;
+   
+    }
+    .Quality-eggs {
+   
+        width: 498px;
+        height: 240px;
+    }
+    .Snacks-nourishes {
+        width: 498px;
+        height: 240px;
+    }
+    .main-image-part-home-one {
+        background-position: center;
+        /* width: 100%; */
+        /* height: 100%; */
+        margin-top: 8px;
+        width: 519px;
+        height: 249px;
+        margin: 0 auto;
+    }
+
+    .main-part-heading {
+        font-size: 1.3rem;
+        font-weight: 500;
+        width: 100%;
+    }
+
+    .Fruits__Vegetables__section {
+
+        justify-content: center;
+
+    }
+
+    .Weekend-Discount-btn {
+        font-size: 1rem;
+        font-weight: 400;
+
+        width: 105px;
+        height: 28px;
+    }
+
+    .main-part-content {
+        width: 100%;
+        gap: 11px;
+        height: 95%;
+        padding: 0 4rem;
+    }
+
+    .shop-now-btn {
+        width: 101px;
+        height: 30px;
+        font-size: 1rem;
+    }
+
+    .hidden-products {
+        display: none;
+    }
+
+    .main-part-text {
+        font-size: .8rem;
+        font-weight: 400;
+        color: var(--bottom-header-text-color);
+        margin: 0;
+    }
+
+    .main-part__text {
+        font-size: .6rem;
+        font-weight: 400;
+        color: var(--bottom-header-text-color);
+        margin: 0;
+    }
+
+    .del-number {
+        font-size: 1rem;
+        font-weight: 500;
+        color: #111827;
+    }
+
+    .main-top-content2 {
+        display: none;
+
+    }
+
+    .main-top-content1 {
+        display: none;
+
+    }
+
+    .home1-Popular-Companies-content-two {
+        display: none;
+
+    }
+
+    .Percent__Apple__Juice {
+        width: 503px;
+        height: 518px;
+    }
+
+    .Rising__Crust__Frozen {
+        display: none;
+
+    }
+
+    .apple-juice-content {
+        align-items: center;
+        justify-content: center;
+        padding-left: 0;
+
+    }
+
+    .apple-juice-contenttwo {
+        align-items: center;
+        justify-content: center;
+        padding-left: 0;
+
+    }
+
+    .Percent-Apple {
+
+        text-align: center;
+    }
+
+    .apple-juice-content p {
+        text-align: center;
+
+
+    }
+
+    .product-is-line {
+        background: linear-gradient(to right, #FFD200, #DC2626);
+        width: 100%;
+    }
+
+    .side-panel-line-two {
+
+        width: 100%;
+    }
+
+    .banana__lays__btn {
+        width: 180px;
+        height: 31px;
+    }
+
+
+
+    .banana__lays__btn {
+
+        width: 169px;
+        height: 29px;
+
+    }
+
+    .banana-lays-cart {
+
+        width: 500px;
+        height: 258px;
+        margin: 0 auto;
+
+    }
+
+    .Great__Value__Rising__star {
+        display: none;
+
+    }
+
+    .banana__lays__tags {
+        display: none;
+
+    }
+
+    .home1-Popular-Companies-content {
+        display: none;
+
+    }
+
+    .affordable-price {
+
+        width: 100%;
+    }
+
+    .sub__home__section__one {
+        gap: 12px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .home__section__one {
+
+        padding: 0 1rem;
+    }
+
+    .Cold-Sale-btn {
+        position: absolute;
+        left: 13px;
+        top: 155px;
+        display: none;
+    }
+
+    .dry-fruit-card {
+        margin: 0;
+        width: 242.3px;
+        height: 376px;
+    }
+
+    .applice-juice {
+        width: 200px;
+        height: 200px;
+        /* border: 1px solid; */
+    }
+
+    .applice-juice-four {
+        width: 230px;
+        height: 230px;
+        /* border: 1px solid; */
+    }
+
+    .Simple-Kitchen-FD {
+        display: none;
+
+    }
+
+    .banana__lays__star {
+        display: none;
+
+    }
+
+    .banana-lays-cart-three {
+        width: 497px;
+        height: 258px;
+    }
+
+    .Percent__Apple__Juice__three {
+        width: 496px;
+    }
+
+    .product-is-line-three {
+        display: none;
+
+    }
+
+    .banana__lays__cart {
+
+        gap: 69px;
+        margin-top: 28px;
+    }
+
+    .side-panel-line-three {
+
+        display: none;
+    }
+
+    .Quality-eggs-four {
+
+        width: 488px;
+        height: 240px;
+        padding: 0 23px;
+    }
+
+    .apple-juice-content-two {
+        align-items: center;
+        width: 317px;
+
+    }
+
+    .apple-juice-content-two p {
+        text-align: center;
+    }
+
+    .banana__lays__btn__three {
+        width: 316px;
+        height: 39px;
+        margin-left: 0rem;
+    }
+
+    .home__section__four {
+
+        padding: 0 1rem;
+
+    }
+
+    .home__section__three {
+        padding: 0px 1rem;
+        flex-wrap: wrap;
+    }
+
+    .home__section__two {
+        flex-wrap: wrap;
+        padding: 0px 1rem;
+    }
+
+    .main-section {
+
+        gap: 0px;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .bottom-cart {
+        display: none;
+    }
+    .main-image-part {
+        background-position: center;
+        /* width: 100%; */
+        /* height: 100%; */
+        margin-top: 8px;
+        /* width: 767px; */
+        height: 349px;
+        margin: 0 auto;
+    }
+    .vagetable__section {
+
+        flex-direction: column;
+   
+    }
+    .Quality-eggs {
+   
+        width: 498px;
+        height: 240px;
+    }
+    .Snacks-nourishes {
+        width: 498px;
+        height: 240px;
+    }
+    .main-image-part-home-two {
+        background-position: center;
+        /* width: 100%; */
+        /* height: 100%; */
+        margin-top: 8px;
+        width: 767px;
+        height: 349px;
+        margin: 0 auto;
+    }
+
+    .main-image-part-home-one {
+        background-position: center;
+        /* width: 100%; */
+        /* height: 100%; */
+        margin-top: 8px;
+        width: 767px;
+        height: 349px;
+        margin: 0 auto;
+    }
+
+    .main-part-heading {
+        font-size: 1.3rem;
+        font-weight: 500;
+        width: 100%;
+    }
+
+    .Fruits__Vegetables__section {
+
+        justify-content: center;
+
+    }
+
+    .Weekend-Discount-btn {
+        font-size: 1rem;
+        font-weight: 400;
+
+        width: 105px;
+        height: 28px;
+    }
+
+    .main-part-content {
+        width: 100%;
+        gap: 11px;
+        height: 95%;
+        padding: 0 4rem;
+    }
+
+    .shop-now-btn {
+        width: 101px;
+        height: 30px;
+        font-size: 1rem;
+    }
+
+    .hidden-products {
+        display: none;
+    }
+
+    .main-part-text {
+        font-size: .8rem;
+        font-weight: 400;
+        color: var(--bottom-header-text-color);
+        margin: 0;
+    }
+
+    .main-part__text {
+        font-size: .6rem;
+        font-weight: 400;
+        color: var(--bottom-header-text-color);
+        margin: 0;
+    }
+
+    .del-number {
+        font-size: 1rem;
+        font-weight: 500;
+        color: #111827;
+    }
+
+    .main-top-content2 {
+        display: none;
+
+    }
+
+    .main-top-content1 {
+        display: none;
+
+    }
+
+    .home1-Popular-Companies-content-two {
+        display: none;
+
+    }
+
+    .Percent__Apple__Juice {
+        width: 503px;
+        height: 518px;
+    }
+
+    .Rising__Crust__Frozen {
+        display: none;
+
+    }
+
+    .apple-juice-content {
+        align-items: center;
+        justify-content: center;
+        padding-left: 0;
+
+    }
+
+    .apple-juice-contenttwo {
+        align-items: center;
+        justify-content: center;
+        padding-left: 0;
+
+    }
+
+    .Percent-Apple {
+
+        text-align: center;
+    }
+
+    .apple-juice-content p {
+        text-align: center;
+
+
+    }
+
+    .product-is-line {
+        background: linear-gradient(to right, #FFD200, #DC2626);
+        width: 100%;
+    }
+
+    .side-panel-line-two {
+
+        width: 100%;
+    }
+
+    .banana__lays__btn {
+        width: 180px;
+        height: 31px;
+    }
+
+
+
+    .banana__lays__btn {
+
+        width: 169px;
+        height: 29px;
+
+    }
+
+    .banana-lays-cart {
+
+        width: 500px;
+        height: 258px;
+        margin: 0 auto;
+
+    }
+
+    .Great__Value__Rising__star {
+        display: none;
+
+    }
+
+    .banana__lays__tags {
+        display: none;
+
+    }
+
+    .home1-Popular-Companies-content {
+        display: none;
+
+    }
+
+    .affordable-price {
+
+        width: 100%;
+    }
+
+    .sub__home__section__one {
+        gap: 12px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .home__section__one {
+
+        padding: 0 1rem;
+    }
+
+    .Cold-Sale-btn {
+        position: absolute;
+        left: 13px;
+        top: 155px;
+        display: none;
+    }
+
+    .dry-fruit-card {
+        margin: 0;
+        width: 242.3px;
+        height: 376px;
+    }
+
+    .applice-juice {
+        width: 200px;
+        height: 200px;
+        /* border: 1px solid; */
+    }
+
+    .applice-juice-four {
+        width: 230px;
+        height: 230px;
+        /* border: 1px solid; */
+    }
+
+    .Simple-Kitchen-FD {
+        display: none;
+
+    }
+
+    .banana__lays__star {
+        display: none;
+
+    }
+
+    .banana-lays-cart-three {
+        width: 497px;
+        height: 258px;
+    }
+
+    .Percent__Apple__Juice__three {
+        width: 496px;
+    }
+
+    .product-is-line-three {
+        display: none;
+
+    }
+
+    .banana__lays__cart {
+
+        gap: 69px;
+        margin-top: 28px;
+    }
+
+    .side-panel-line-three {
+
+        display: none;
+    }
+
+    .Quality-eggs-four {
+
+        width: 488px;
+        height: 240px;
+        padding: 0 23px;
+    }
+
+    .apple-juice-content-two {
+        align-items: center;
+        width: 317px;
+
+    }
+
+    .apple-juice-content-two p {
+        text-align: center;
+    }
+
+    .banana__lays__btn__three {
+        width: 316px;
+        height: 39px;
+        margin-left: 0rem;
+    }
+
+    .home__section__four {
+
+        padding: 0 1rem;
+
+    }
+
+    .home__section__three {
+        padding: 0px 1rem;
+        flex-wrap: wrap;
+    }
+
+    .home__section__two {
+        flex-wrap: wrap;
+        padding: 0px 1rem;
+    }
+
+    .main-section {
+
+        gap: 0px;
+    }
+}

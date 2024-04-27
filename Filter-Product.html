@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter-Product</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="/CSS/Filter-Product.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+</head>
+
+<body>
+    <div id="header"></div>
+    <script>
+        $(function () {
+            $('#header').load('./header.html')
+        })
+    </script>
+    <main>
+        <section class="filter-section-one">
+            <hr class="header-line-filter">
+            <div class="filter__section__one">
+                <div class="filter__section__two">
+                    <div class="responsive-top-side-bar">
+                        <div class="responsive__top__side__bar">
+                            <img src="/Image/sort-item.png" alt="">
+                            <p class="Product__Categories">Product Categories</p>
+                        </div>
+                        <div class="left-side-bar">
+                            <form class="home-using-items-side">
+                                <div class="Fruits-Vegetables">
+                                    <label for="exampleCheckbox" class="exampleCheckbox">
+                                        <input type="checkbox" id="exampleCheckbox" class="exampleCheckbox"
+                                            name="exampleCheckbox">
+                                        Fruits & Vegetables
+                                    </label>
+                                    <img src="/Image/plus.png" alt="" class="Fruits-Vegetables-plus">
+                                </div>
+                                <div class="Fruits-Vegetables">
+                                    <label for="BabyPregnancy" class="exampleCheckbox-black">
+                                        <input type="checkbox" id="BabyPregnancy" class="exampleCheckbox"
+                                            name="exampleCheckbox">
+                                        Baby & Pregnancy
+                                    </label>
+                                </div>
+                                <div class="Fruits-Vegetables">
+                                    <label for="Beverages" class="exampleCheckbox-black">
+                                        <input type="checkbox" id="Beverages" class="exampleCheckbox"
+                                            name="exampleCheckbox">
+                                        Beverages
+                                    </label>
+                                    <img src="/Image/plus.png" alt="" class="Fruits-Vegetables-plus">
+                                </div>
+                                <div class="Fruits-Vegetables">
+                                    <label for="MeatsSeafood" class="exampleCheckbox-black">
+                                        <input type="checkbox" id="MeatsSeafood" class="exampleCheckbox"
+                                            name="exampleCheckbox">
+                                        Meats & Seafood
+                                    </label>
+                                    <img src="/Image/plus.png" alt="" class="Fruits-Vegetables-plus">
+                                </div>
+                                <div class="Fruits-Vegetables">
+                                    <label for="BiscuitsSnacks" class="exampleCheckbox-black">
+                                        <input type="checkbox" id="BiscuitsSnacks" class="exampleCheckbox"
+                                            name="exampleCheckbox">
+                                        Biscuits & Snacks
+                                    </label>
+                                </div>
+                                <div class="Fruits-Vegetables">
+                                    <label for="BreadsBakery" class="exampleCheckbox-black">
+                                        <input type="checkbox" id="BreadsBakery" class="exampleCheckbox"
+                                            name="exampleCheckbox">
+                                        Breads & Bakery
+                                    </label>
+                                    <img src="/Image/plus.png" alt="" class="Fruits-Vegetables-plus">
+                                </div>
+                                <div class="Fruits-Vegetables">
+                                    <label for="BreaksfastDairy" class="exampleCheckbox-black">
+                                        <input type="checkbox" id="BreaksfastDairy" class="exampleCheckbox"
+                                            name="exampleCheckbox">
+                                        Breaksfast & Dairy
+                                    </label>
+                                    <img src="/Image/plus.png" alt="" class="Fruits-Vegetables-plus">
+                                </div>
+                                <div class="Fruits-Vegetables">
+                                    <label for="FrozenFoods" class="exampleCheckbox-black">
+                                        <input type="checkbox" id="FrozenFoods" class="exampleCheckbox"
+                                            name="exampleCheckbox">
+                                        Frozen Foods
+                                    </label>
+                                </div>
+                                <div class="Fruits-Vegetables">
+                                    <label for="GroceryStaples" class="exampleCheckbox-black">
+                                        <input type="checkbox" id="GroceryStaples" class="exampleCheckbox"
+                                            name="exampleCheckbox">
+                                        Grocery & Staples
+                                    </label>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <a href="index.html" class="filter-home">
+                        <p class="filter-home-text">Home</p>
+                        <img src="/Image/forward arrow.png" alt="" class="filter-home-img">
+                    </a>
+                    <p class="filter-shop-text">Shop</p>
+                </div>
+            </div>
+
+        </section>
+        <section class="main-filter-section">
+            <div class="main__filter__section">
+                <div class="main__filter__section__left">
+                    <h1 class="Widget-price-filter">Widget price filter</h1>
+                    <div class="min-max-price">
+                        <form class="min__max__price">
+                            <label for="minPrice" id="minPrice" class="input-home-text">Min Price <br>
+                                <input type="number" id="minPrice" name="minPrice" class="input-minPrice"
+                                    placeholder="0" min="0">
+                            </label>
+
+                            <label for="maxPrice" id="maxPrice" class="input-home-text">Max Price <br>
+                                <input type="number" id="maxPrice" name="maxPrice" class="input-maxPrice"
+                                    placeholder="30" min="30">
+                            </label>
+                        </form>
+                        <div class="input-line-bar">
+                            <span id="leftCircle" class="left-black-circle"></span>
+                            <span id="centerLine" class="center-black-line"></span>
+                            <span id="rightCircle" class="right-black-circle left-black-circle"></span>
+
+                        </div>
+                        <div class="price-zero-thirty">
+                            <span id="priceRangeDisplay" class="pr1ce__zero__thirty">Price: $0 — $30</span>
+                            <button id="filterButton" class="pr1ce__zero__thirty-btn">Filter</button>
+
+                        </div>
+                    </div>
+                    <div id="productList" style="display: none;"></div>
+
+                    <hr class="input-panel-line">
+                    <div class="left-panel-Product-Categories">
+                        <h1 class="Product-Categories Widget-price-filter">Product Categories</h1>
+                        <form class="home-using-items">
+                            <div class="Fruits-Vegetables">
+                                <label for="FruitsVegetables" class="exampleCheckbox">
+                                    <input type="checkbox" id="FruitsVegetables" class="exampleCheckbox"
+                                        name="FruitsVegetables">
+                                    Fruits & Vegetables
+                                </label>
+                                <img src="/Image/plus.png" alt="" class="Fruits-Vegetables-plus">
+                            </div>
+                            <div class="Fruits-Vegetables">
+                                <label for="BabyPregnancy" class="exampleCheckbox-black">
+                                    <input type="checkbox" id="BabyPregnancy" class="exampleCheckbox"
+                                        name="BabyPregnancy">
+                                    Baby & Pregnancy
+                                </label>
+                            </div>
+                            <div class="Fruits-Vegetables">
+                                <label for="Beverages" class="exampleCheckbox-black">
+                                    <input type="checkbox" id="Beverages" class="exampleCheckbox" name="Beverages">
+                                    Beverages
+                                </label>
+                                <img src="/Image/plus.png" alt="" class="Fruits-Vegetables-plus">
+                            </div>
+                            <div class="Fruits-Vegetables">
+                                <label for="MeatsSeafood" class="exampleCheckbox-black">
+                                    <input type="checkbox" id="MeatsSeafood" class="exampleCheckbox"
+                                        name="MeatsSeafood">
+                                    Meats & Seafood
+                                </label>
+                                <img src="/Image/plus.png" alt="" class="Fruits-Vegetables-plus">
+                            </div>
+                            <div class="Fruits-Vegetables">
+                                <label for="BiscuitsSnacks" class="exampleCheckbox-black">
+                                    <input type="checkbox" id="BiscuitsSnacks" class="exampleCheckbox"
+                                        name="BiscuitsSnacks">
+                                    Biscuits & Snacks
+                                </label>
+                            </div>
+                            <div class="Fruits-Vegetables">
+                                <label for="BreadsBakery" class="exampleCheckbox-black">
+                                    <input type="checkbox" id="BreadsBakery" class="exampleCheckbox"
+                                        name="BreadsBakery">
+                                    Breads & Bakery
+                                </label>
+                                <img src="/Image/plus.png" alt="" class="Fruits-Vegetables-plus">
+                            </div>
+                            <div class="Fruits-Vegetables">
+                                <label for="BreakfastDairy" class="exampleCheckbox-black">
+                                    <input type="checkbox" id="BreakfastDairy" class="exampleCheckbox"
+                                        name="BreakfastDairy">
+                                    Breakfast & Dairy
+                                </label>
+                                <img src="/Image/plus.png" alt="" class="Fruits-Vegetables-plus">
+                            </div>
+                            <div class="Fruits-Vegetables">
+                                <label for="FrozenFoods" class="exampleCheckbox-black">
+                                    <input type="checkbox" id="FrozenFoods" class="exampleCheckbox" name="FrozenFoods">
+                                    Frozen Foods
+                                </label>
+                            </div>
+                            <div class="Fruits-Vegetables">
+                                <label for="GroceryStaples" class="exampleCheckbox-black">
+                                    <input type="checkbox" id="GroceryStaples" class="exampleCheckbox"
+                                        name="GroceryStaples">
+                                    Grocery & Staples
+                                </label>
+
+
+                            </div>
+                        </form>
+
+                    </div>
+                    <hr class="input-panel-line">
+
+                    <div class="Filter-by-Color left-panel-Product-Categories">
+                        <h1 class="Filter-by-Color-text Widget-price-filter">Filter by Color</h1>
+                        <div class="Fruits-Vegetables">
+                            <label for="Green" class="exampleCheckbox-black">
+                                <input type="radio" id="Green" class="exampleCheckbox" name="exampleCheckbox">
+                                Green
+                            </label>
+                            <span class="Fruits-Vegetables-green">(1)</span>
+                        </div>
+                    </div>
+                    <hr class="input-panel-line">
+
+                    <div class="Filter-by-Color left-panel-Product-Categories">
+                        <h1 class="Filter-by-Color-text Widget-price-filter">Filter by Brands</h1>
+                        <div class="Fruits-Vegetables">
+                            <label for="Fresh" class="exampleCheckbox-black">
+                                <input type="checkbox" id="Fresh" class="exampleCheckbox" name="exampleCheckbox">
+                                Fresh
+                            </label>
+                            <span class="Fruits-Vegetables-green">(1)</span>
+                        </div>
+                    </div>
+                    <hr class="input-panel-line">
+
+                    <div class="Filter-by-Color left-panel-Product-Categories">
+                        <h1 class="Filter-by-Color-text Widget-price-filter">Product Status</h1>
+                        <div class="Fruits-Vegetables">
+                            <label for="InStock" class="exampleCheckbox-black">
+                                <input type="checkbox" id="InStock" class="exampleCheckbox" name="exampleCheckbox">
+                                In Stock
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="Filter-by-Color left-panel-Product-Categories">
+                        <div class="Fruits-Vegetables">
+                            <label for="OnSale" class="exampleCheckbox-black">
+                                <input type="checkbox" id="OnSale" class="exampleCheckbox" name=" OnSale">
+                                On Sale
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div id="filterButton" class="main__filter__section__right">
+                    <div class="clear-products">
+                        <a href="#" class="clear-filters">
+                            <span class="Clear__filters">x</span>
+                            <h2 class="Clear__filters__text">Clear filters</h2>
+                        </a>
+                        <a href="#" class="clear-filters">
+                            <span class="Clear__filters">x</span>
+                            <h2 class="Clear__filters__text">Fruits & Vegetables</h2>
+                        </a>
+                    </div>
+                    <div class="main-image-part">
+                        <div class="main-part-content">
+                            <a href="#">
+                                <button class="Weekend-Discount-btn">Weekend Discount</button>
+                            </a>
+                            <h1 class="main-part-heading">Grocery store with different
+                                treasures
+                            </h1>
+                            <p class="main-part-text">We have prepared special discounts for you on grocery <br>
+                                products...
+                            </p>
+                            <div class="main-quantity-part">
+                                <a href="">
+                                    <button class="vagetable-btn">Shop Now →</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Showing-all-16">
+                        <div class="Showing__all__16">
+                            <h2 class="Showing-all-16-text">Showing all 16 results</h2>
+                        </div>
+                        <div class="Sort__by__latest">
+                            <h2 class="Sort__by__latest__text">Sort: <span class="Sort__by__latest__blue">Sort by
+                                    latest</span></h2>
+                            <h2 class="Sort__by__latest__text">| Show: <span class="Sort__by__latest__blue">20
+                                    Items</span></h2>
+                            <div class="show-sort-imgs">
+                                <a href="#">
+                                    <img src="/Image/sort-item.png" alt="" class="sort-img">
+                                </a>
+                                <a href="#"><img src="/Image/show-item.png" alt="" class="show-img"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filters-home-products">
+                        <div class="dry-fruit-card">
+                            <span class="juice-label-price">11%</span>
+                            <img src="/Image/pot1.png" alt="Product Image" class="applice-juice">
+                            <img src="/Image/black-star bc-white.png" alt="" class="banana__lays__star">
+                            <div class="Simple-Kitchen-FD">
+                                <span class="Simple__Ki__tchen__FD__red"></span>
+                                <span class="Simple__Ki__tchen__FD__white"></span>
+                            </div>
+                            <div class="apple-juice-content">
+                                <h1 class="Percent-Apple">Simple Kitchen FD Sliced
+                                    Strawberries – 1.08lb
+                                </h1>
+                                <img src="/Image/yellow-start.png" alt="" class="home-one-yellow-img">
+                                <div class="main__numbers">
+                                    <span class="juice-card-number">$14.12</span>
+                                    <del class="juice-del-number">$17.12</del>
+                                </div>
+                                <div class="home-one-red-cart">
+                                    <div class="home__one__red__cart">
+                                        <img src="/Image/white-card.png" alt="" class="home-one-red-cart-img">
+                                    </div>
+                                    <h3 class="home__one__red__cart-nmbr">In Stock</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dry-fruit-card">
+                            <span class="juice-label-price">11%</span>
+                            <img src="/Image/pot2.png" alt="Product Image" class="applice-juice">
+                            <img src="/Image/black-star bc-white.png" alt="" class="banana__lays__star">
+                            <div class="Simple-Kitchen-FD">
+                                <span class="Simple__Ki__tchen__FD__red"></span>
+                                <span class="Simple__Ki__tchen__FD__white"></span>
+                            </div>
+                            <div class="apple-juice-content">
+                                <h1 class="Percent-Apple">Simple Kitchen FD Sliced
+                                    Strawberries – 1.08lb
+                                </h1>
+                                <img src="/Image/yellow-start.png" alt="" class="home-one-yellow-img">
+                                <div class="main__numbers">
+                                    <span class="juice-card-number">$14.12</span>
+                                    <del class="juice-del-number">$17.12</del>
+                                </div>
+                                <div class="home-one-red-cart">
+                                    <div class="home__one__red__cart">
+                                        <img src="/Image/white-card.png" alt="" class="home-one-red-cart-img">
+                                    </div>
+                                    <h3 class="home__one__red__cart-nmbr">In Stock</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dry-fruit-card">
+                            <span class="juice-label-price">11%</span>
+                            <img src="/Image/pot3.png" alt="Product Image" class="applice-juice">
+                            <img src="/Image/black-star bc-white.png" alt="" class="banana__lays__star">
+                            <div class="Simple-Kitchen-FD">
+                                <span class="Simple__Ki__tchen__FD__red"></span>
+                                <span class="Simple__Ki__tchen__FD__white"></span>
+                            </div>
+                            <div class="apple-juice-content">
+                                <h1 class="Percent-Apple">Simple Kitchen FD Sliced
+                                    Strawberries – 1.08lb
+                                </h1>
+                                <img src="/Image/yellow-start.png" alt="" class="home-one-yellow-img">
+                                <div class="main__numbers">
+                                    <span class="juice-card-number">$14.12</span>
+                                    <del class="juice-del-number">$17.12</del>
+                                </div>
+                                <div class="home-one-red-cart">
+                                    <div class="home__one__red__cart">
+                                        <img src="/Image/white-card.png" alt="" class="home-one-red-cart-img">
+                                    </div>
+                                    <h3 class="home__one__red__cart-nmbr">In Stock</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dry-fruit-card">
+                            <span class="juice-label-price">11%</span>
+                            <img src="/Image/pot4.png" alt="Product Image" class="applice-juice">
+                            <img src="/Image/black-star bc-white.png" alt="" class="banana__lays__star">
+                            <div class="Simple-Kitchen-FD">
+                                <span class="Simple__Ki__tchen__FD__red"></span>
+                                <span class="Simple__Ki__tchen__FD__white"></span>
+                            </div>
+                            <div class="apple-juice-content">
+                                <h1 class="Percent-Apple">Simple Kitchen FD Sliced
+                                    Strawberries – 1.08lb
+                                </h1>
+                                <img src="/Image/yellow-start.png" alt="" class="home-one-yellow-img">
+                                <div class="main__numbers">
+                                    <span class="juice-card-number">$14.12</span>
+                                    <del class="juice-del-number">$17.12</del>
+                                </div>
+                                <div class="home-one-red-cart">
+                                    <div class="home__one__red__cart">
+                                        <img src="/Image/white-card.png" alt="" class="home-one-red-cart-img">
+                                    </div>
+                                    <h3 class="home__one__red__cart-nmbr">In Stock</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dry-fruit-card">
+                            <span class="juice-label-price">11%</span>
+                            <img src="/Image/pot5.png" alt="Product Image" class="applice-juice">
+                            <img src="/Image/black-star bc-white.png" alt="" class="banana__lays__star">
+                            <div class="Simple-Kitchen-FD">
+                                <span class="Simple__Ki__tchen__FD__red"></span>
+                                <span class="Simple__Ki__tchen__FD__white"></span>
+                            </div>
+                            <div class="apple-juice-content">
+                                <h1 class="Percent-Apple">Simple Kitchen FD Sliced
+                                    Strawberries – 1.08lb
+                                </h1>
+                                <img src="/Image/yellow-start.png" alt="" class="home-one-yellow-img">
+                                <div class="main__numbers">
+                                    <span class="juice-card-number">$14.12</span>
+                                    <del class="juice-del-number">$17.12</del>
+                                </div>
+                                <div class="home-one-red-cart">
+                                    <div class="home__one__red__cart">
+                                        <img src="/Image/white-card.png" alt="" class="home-one-red-cart-img">
+                                    </div>
+                                    <h3 class="home__one__red__cart-nmbr">In Stock</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dry-fruit-card">
+                            <span class="juice-label-price">11%</span>
+                            <img src="/Image/pot6.png" alt="Product Image" class="applice-juice">
+                            <img src="/Image/black-star bc-white.png" alt="" class="banana__lays__star">
+                            <div class="Simple-Kitchen-FD">
+                                <span class="Simple__Ki__tchen__FD__red"></span>
+                                <span class="Simple__Ki__tchen__FD__white"></span>
+                            </div>
+                            <div class="apple-juice-content">
+                                <h1 class="Percent-Apple">Simple Kitchen FD Sliced
+                                    Strawberries – 1.08lb
+                                </h1>
+                                <img src="/Image/yellow-start.png" alt="" class="home-one-yellow-img">
+                                <div class="main__numbers">
+                                    <span class="juice-card-number">$14.12</span>
+                                    <del class="juice-del-number">$17.12</del>
+                                </div>
+                                <div class="home-one-red-cart">
+                                    <div class="home__one__red__cart">
+                                        <img src="/Image/white-card.png" alt="" class="home-one-red-cart-img">
+                                    </div>
+                                    <h3 class="home__one__red__cart-nmbr">In Stock</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dry-fruit-card">
+                            <span class="juice-label-price">11%</span>
+                            <img src="/Image/pot7.png" alt="Product Image" class="applice-juice">
+                            <img src="/Image/black-star bc-white.png" alt="" class="banana__lays__star">
+                            <div class="Simple-Kitchen-FD">
+                                <span class="Simple__Ki__tchen__FD__red"></span>
+                                <span class="Simple__Ki__tchen__FD__white"></span>
+                            </div>
+                            <div class="apple-juice-content">
+                                <h1 class="Percent-Apple">Simple Kitchen FD Sliced
+                                    Strawberries – 1.08lb
+                                </h1>
+                                <img src="/Image/yellow-start.png" alt="" class="home-one-yellow-img">
+                                <div class="main__numbers">
+                                    <span class="juice-card-number">$14.12</span>
+                                    <del class="juice-del-number">$17.12</del>
+                                </div>
+                                <div class="home-one-red-cart">
+                                    <div class="home__one__red__cart">
+                                        <img src="/Image/white-card.png" alt="" class="home-one-red-cart-img">
+                                    </div>
+                                    <h3 class="home__one__red__cart-nmbr">In Stock</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dry-fruit-card">
+                            <span class="juice-label-price">11%</span>
+                            <img src="/Image/pot8.png" alt="Product Image" class="applice-juice">
+                            <img src="/Image/black-star bc-white.png" alt="" class="banana__lays__star">
+                            <div class="Simple-Kitchen-FD">
+                                <span class="Simple__Ki__tchen__FD__red"></span>
+                                <span class="Simple__Ki__tchen__FD__white"></span>
+                            </div>
+                            <div class="apple-juice-content">
+                                <h1 class="Percent-Apple">Simple Kitchen FD Sliced
+                                    Strawberries – 1.08lb
+                                </h1>
+                                <img src="/Image/yellow-start.png" alt="" class="home-one-yellow-img">
+                                <div class="main__numbers">
+                                    <span class="juice-card-number">$14.12</span>
+                                    <del class="juice-del-number">$17.12</del>
+                                </div>
+                                <div class="home-one-red-cart">
+                                    <div class="home__one__red__cart">
+                                        <img src="/Image/white-card.png" alt="" class="home-one-red-cart-img">
+                                    </div>
+                                    <h3 class="home__one__red__cart-nmbr">In Stock</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dry-fruit-card">
+                            <span class="juice-label-price">11%</span>
+                            <img src="/Image/pot9.png" alt="Product Image" class="applice-juice">
+                            <img src="/Image/black-star bc-white.png" alt="" class="banana__lays__star">
+                            <div class="Simple-Kitchen-FD">
+                                <span class="Simple__Ki__tchen__FD__red"></span>
+                                <span class="Simple__Ki__tchen__FD__white"></span>
+                            </div>
+                            <div class="apple-juice-content">
+                                <h1 class="Percent-Apple">Simple Kitchen FD Sliced
+                                    Strawberries – 1.08lb
+                                </h1>
+                                <img src="/Image/yellow-start.png" alt="" class="home-one-yellow-img">
+                                <div class="main__numbers">
+                                    <span class="juice-card-number">$14.12</span>
+                                    <del class="juice-del-number">$17.12</del>
+                                </div>
+                                <div class="home-one-red-cart">
+                                    <div class="home__one__red__cart">
+                                        <img src="/Image/white-card.png" alt="" class="home-one-red-cart-img">
+                                    </div>
+                                    <h3 class="home__one__red__cart-nmbr">In Stock</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dry-fruit-card">
+                            <span class="juice-label-price">11%</span>
+                            <img src="/Image/pot10.png" alt="Product Image" class="applice-juice">
+                            <img src="/Image/black-star bc-white.png" alt="" class="banana__lays__star">
+                            <div class="Simple-Kitchen-FD">
+                                <span class="Simple__Ki__tchen__FD__red"></span>
+                                <span class="Simple__Ki__tchen__FD__white"></span>
+                            </div>
+                            <div class="apple-juice-content">
+                                <h1 class="Percent-Apple">Simple Kitchen FD Sliced
+                                    Strawberries – 1.08lb
+                                </h1>
+                                <img src="/Image/yellow-start.png" alt="" class="home-one-yellow-img">
+                                <div class="main__numbers">
+                                    <span class="juice-card-number">$14.12</span>
+                                    <del class="juice-del-number">$17.12</del>
+                                </div>
+                                <div class="home-one-red-cart">
+                                    <div class="home__one__red__cart">
+                                        <img src="/Image/white-card.png" alt="" class="home-one-red-cart-img">
+                                    </div>
+                                    <h3 class="home__one__red__cart-nmbr">In Stock</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dry-fruit-card">
+                            <span class="juice-label-price">11%</span>
+                            <img src="/Image/pot13.png" alt="Product Image" class="applice-juice">
+                            <img src="/Image/black-star bc-white.png" alt="" class="banana__lays__star">
+                            <div class="Simple-Kitchen-FD">
+                                <span class="Simple__Ki__tchen__FD__red"></span>
+                                <span class="Simple__Ki__tchen__FD__white"></span>
+                            </div>
+                            <div class="apple-juice-content">
+                                <h1 class="Percent-Apple">Simple Kitchen FD Sliced
+                                    Strawberries – 1.08lb
+                                </h1>
+                                <img src="/Image/yellow-start.png" alt="" class="home-one-yellow-img">
+                                <div class="main__numbers">
+                                    <span class="juice-card-number">$14.12</span>
+                                    <del class="juice-del-number">$17.12</del>
+                                </div>
+                                <div class="home-one-red-cart">
+                                    <div class="home__one__red__cart">
+                                        <img src="/Image/white-card.png" alt="" class="home-one-red-cart-img">
+                                    </div>
+                                    <h3 class="home__one__red__cart-nmbr">In Stock</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div id="footer"></div>
+    <script>
+        $(function () {
+            $('#footer').load('footer.html')
+        })
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="/JS/Filter-Product.js"></script>
+</body>
+
+</html>
